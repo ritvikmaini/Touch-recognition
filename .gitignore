@@ -5,3 +5,10 @@ __pycache__/
 .DS_Store
 docs/media/frames/
 *.egg-info/
+
+# planning / agent docs — not part of the published project
+docs/superpowers/
+CLAUDE.md
+AGENTS.md
+GEMINI.md
+.cursorrules
