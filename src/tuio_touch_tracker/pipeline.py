@@ -22,7 +22,7 @@ def run(video_path, *, threshold=10, min_area=30, tuio_host="127.0.0.1",
     width = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
     height = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
 
-    server = new_server()
+    server = new_server(tuio_host, tuio_port)
     previous = []
     id_counter = 0
     current_frame = 0

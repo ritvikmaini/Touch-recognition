@@ -43,5 +43,5 @@ def print_touch_events(current, server):
                 print(f"Cursor ID: {touch.get_id()} X: {touch.get_x()} Y: {touch.get_y()}")
 
 
-def new_server():
-    return TuioServer()
+def new_server(host="127.0.0.1", port=3333):
+    return TuioServer(host, port)
