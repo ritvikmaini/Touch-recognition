@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tuio-touch-tracker"
+version = "0.1.0"
+description = "Real-time multitouch blob tracking that streams TUIO cursor events."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Ritvik Maini", email = "mainiritvik@gmail.com" }]
+dependencies = [
+    "opencv-python>=4.5",
+    "numpy>=1.21",
+    "python-tuio>=0.0.9",
+]
+
+[project.scripts]
+tuio-touch-tracker = "tuio_touch_tracker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
